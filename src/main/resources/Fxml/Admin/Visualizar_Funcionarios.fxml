@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="painel_fundo" fx:id="painel_geralfundo" prefHeight="800.0" prefWidth="1023.0" stylesheets="@../../Styles/VisualizarFun.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jdm.agenda.Controllers.Admin.VisualizarFunController">
+    <ScrollPane id="painel_funcionarios" fx:id="painel_visualizarFuncionario" layoutX="46.0" layoutY="80.0" prefHeight="658.0" prefWidth="561.0" AnchorPane.bottomAnchor="62.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="416.0" AnchorPane.topAnchor="80.0">
+      <content>
+         <FlowPane fx:id="visualizarFuncionario" hgap="10" orientation="VERTICAL" prefHeight="656.0" prefWidth="529.0" vgap="10" />
+      </content>
+    </ScrollPane>
+    <Pane id="painel_quantidadeFuncionario" fx:id="painel_quantidadeFuncionario" layoutX="664.0" layoutY="80.0" prefHeight="368.0" prefWidth="327.0">
+        <Text layoutX="57.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade Funcionário">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Text>
+        <ProgressBar id="barra_prog1_quantidade" layoutX="63.0" layoutY="115.0" prefHeight="27.0" prefWidth="200.0" progress="0.46" />
+        <ProgressBar id="barra_prog2_quantidade" layoutX="63.0" layoutY="174.0" prefHeight="27.0" prefWidth="200.0" progress="0.66" />
+        <Rectangle id="ret_nivel2" arcHeight="5.0" arcWidth="5.0" fill="#f06595" height="11.0" layoutX="63.0" layoutY="271.0" stroke="WHITE" strokeType="INSIDE" width="46.0" />
+        <Rectangle id="ret_nivel1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="11.0" layoutX="63.0" layoutY="307.0" stroke="WHITE" strokeType="INSIDE" width="46.0" />
+        <Text layoutX="129.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nível 2">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text layoutX="129.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nível 1">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+    </Pane>
+    <Button id="btn_sair" fx:id="botao_sair" layoutX="948.0" layoutY="28.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="61.0" text="Sair" />
+    <Pane id="add_inativ" fx:id="painel_botao" layoutX="668.0" layoutY="496.0" prefHeight="242.0" prefWidth="319.0">
+        <Button id="btn_cadastrar" fx:id="botao_cadastrarFuncionario" layoutX="60.0" layoutY="63.0" mnemonicParsing="false" onAction="#Btn_PaginaCadastrar" prefHeight="44.0" prefWidth="200.0" text="       Cadastrar" textFill="WHITE">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Button>
+        <Button id="btn_inativar" fx:id="botao_inativarFuncionario" layoutX="60.0" layoutY="140.0" mnemonicParsing="false" onAction="#Btn_inativar" prefHeight="44.0" prefWidth="200.0" text="       Inativar" textFill="WHITE">
+            <font>
+                <Font size="1.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="92.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../Imgs/icon_+user.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="92.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../Imgs/icon_inativar.png" />
+            </image>
+        </ImageView>
+    </Pane>
+    <ImageView fitHeight="36.0" fitWidth="46.0" layoutX="46.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+          <Image url="@../../Imgs/icon_pesquisar.png" />
+        </image>
+    </ImageView>
+   <TextField id="pesquisa_funcionario" fx:id="campo_pesquisaFuncionario" layoutX="97.0" layoutY="25.0" prefHeight="36.0" prefWidth="759.0" promptText="Pesquisar Funcionários" />
+</AnchorPane>

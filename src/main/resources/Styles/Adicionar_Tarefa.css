@@ -1,0 +1,112 @@
+#PaneFundo {
+    -fx-background-color: #EEEEEE;
+}
+
+#Btn_voltarPagina {
+    -fx-background-color: #74c0fc;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.1), 2, 0.0 , 0 , 1 );
+}
+
+#Btn_voltarPagina:hover {
+    -fx-background-color: #45A049;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2), 4, 0.0 , 0 , 2 );
+}
+
+
+#Btn_voltarPagina:pressed {
+    -fx-background-color: #3E8E41;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.1), 2, 0.0 , 0 , 1 );
+}
+
+/* ===== Fundo geral dos dados ===== */
+#painel_fundo_dados {
+    -fx-background-color: linear-gradient(to bottom right, #E9ECF3, #F5F7FB);
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: rgba(0,0,0,0.05);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0, 3, 3);
+    -fx-padding: 20;
+}
+
+/* ===== Painel de dados da tarefa ===== */
+#painel_dados_tarefa {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-color: rgba(0,0,0,0.1);
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 6, 0.2, 2, 2);
+    -fx-padding: 15;
+}
+
+/* Efeito visual ao passar o mouse */
+#painel_dados_tarefa:hover {
+    -fx-background-color: #F8FAFF; /* tom levemente azulado */
+    -fx-effect: dropshadow(gaussian, rgba(76,110,245,0.3), 10, 0.3, 0, 0);
+    -fx-cursor: hand;
+}
+
+/* ===== Painel de dados do usuário ===== */
+#painel_dados_user {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-color: rgba(0,0,0,0.1);
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 6, 0.2, 2, 2);
+    -fx-padding: 15;
+}
+
+/* Efeito visual ao passar o mouse */
+#painel_dados_user:hover {
+    -fx-background-color: #F8FAFF;
+    -fx-effect: dropshadow(gaussian, rgba(101,217,80,0.3), 10, 0.3, 0, 0);
+    -fx-cursor: hand;
+}
+
+#painel_dados_prioriade {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-color: rgba(0,0,0,0.1);
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 6, 0.2, 2, 2);
+    -fx-padding: 15;
+}
+
+/* Efeito visual ao passar o mouse */
+#painel_dados_prioriade:hover {
+    -fx-background-color: #F8FAFF;
+    -fx-effect: dropshadow(gaussian, rgba(101,217,80,0.3), 10, 0.3, 0, 0);
+    -fx-cursor: hand;
+}
+
+#add_tarefa {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.1), 2, 0.0 , 0 , 1 );
+}
+
+
+#add_tarefa:hover {
+    -fx-background-color: #45A049;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2), 4, 0.0 , 0 , 2 );
+}
+
+
+#add_tarefa:pressed {
+    -fx-background-color: #3E8E41;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.1), 2, 0.0 , 0 , 1 );
+}

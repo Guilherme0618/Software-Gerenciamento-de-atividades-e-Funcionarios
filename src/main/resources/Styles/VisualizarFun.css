@@ -1,0 +1,140 @@
+#painel_fundo {
+    -fx-background-color: #EEEEEE;
+}
+
+#painel_funcionarios{
+    -fx-background-color: #D9D9D9;
+    -fx-background-radius: 20px;
+    -fx-background-insets: 0;
+    -fx-border-color: #EEEEEE;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.05), 4, 0.0 , 0 , 2 );
+}
+
+#painel_funcionarios .viewport {
+    -fx-background-color: #D9D9D9;
+}
+
+#painel_quantidadeFuncionario {
+    -fx-background-color: #D9D9D9;
+    -fx-background-radius: 20px;
+    -fx-background-insets: 0;
+    -fx-border-color: #EEEEEE;
+    -fx-border-width: 1px;
+}
+
+#btn_sair {
+    -fx-background-color: #E57373;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.08), 2, 0.0 , 0 , 1 );
+}
+
+
+#btn_sair:hover {
+    -fx-background-color: #D32F2F;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.15), 4, 0.0 , 0 , 2 );
+}
+
+
+#btn_sair:pressed {
+    -fx-background-color: #B71C1C;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.05), 2, 0.0 , 0 , 1 );
+}
+
+#pesquisa_funcionario {
+    -fx-background-color: #EEEEEE;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-radius: 20;
+    -fx-border-color: #aaa;
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+    -fx-padding: 5 5 3 5;
+    -fx-prompt-text-fill: #aaa;
+}
+
+#pesquisa_funcionario:focused {
+    -fx-border-color: #4CAF50;
+    -fx-border-width: 0 0 2 0;
+}
+
+#barra_prog1_quantidade > .bar {
+    -fx-background-color: #f06595; /* cor da parte preenchida */
+
+}
+
+#barra_prog1_quantidade > .track {
+    -fx-background-color: #FFFFFF; /* cor do fundo */
+    -fx-background-radius: 5;
+}
+
+
+#barra_prog2_quantidade > .bar {
+    -fx-background-color: #74c0fc; /* cor da parte preenchida */
+
+}
+
+#barra_prog2_quantidade > .track {
+    -fx-background-color: #FFFFFF; /* cor do fundo */
+    -fx-background-radius: 5;
+}
+
+#add_inativ {
+    -fx-background-color: #D9D9D9;
+    -fx-background-radius: 20px;
+    -fx-background-insets: 0;
+    -fx-border-color: #EEEEEE;
+    -fx-border-width: 1px;
+}
+
+
+#btn_cadastrar {
+    -fx-background-color: #4C6EF5;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.08), 2, 0.0 , 0 , 1 );
+}
+
+
+#btn_cadastrar:hover {
+    -fx-background-color: #4D61B1;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.15), 4, 0.0 , 0 , 2 );
+}
+
+
+#btn_cadastrar:pressed {
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.05), 2, 0.0 , 0 , 1 );
+}
+
+#btn_inativar {
+    -fx-background-color: #EE4A4A;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.08), 2, 0.0 , 0 , 1 );
+}
+
+
+#btn_inativar:hover {
+    -fx-background-color: #D32F2F;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.15), 4, 0.0 , 0 , 2 );
+}
+
+
+#btn_inativar:pressed {
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.05), 2, 0.0 , 0 , 1 );
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="PaneFundo" prefHeight="800.0" prefWidth="1023.0" stylesheets="@../../Styles/Adicionar_Tarefa.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jdm.agenda.Controllers.Admin.AdicionarTarefasController">
+    <Pane id="painel_fundo_dados" fx:id="painel_dadosTarefas" layoutX="28.0" layoutY="94.0" prefHeight="677.0" prefWidth="967.0">
+        <Pane id="painel_dados_tarefa" layoutX="31.0" layoutY="22.0" prefHeight="619.0" prefWidth="528.0">
+            <Text layoutX="210.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dados Tarefas">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Text>
+            <TextField id="nome_tarefa" fx:id="titulo_tarefa" layoutX="14.0" layoutY="103.0" prefHeight="44.0" prefWidth="358.0" promptText=" Nome Tarefa">
+                <font>
+                    <Font size="16.0" />
+                </font>
+            </TextField>
+            <DatePicker id="data_inicio" fx:id="data_inicioTarefa" layoutX="14.0" layoutY="522.0" prefHeight="58.0" prefWidth="180.0" promptText="Data Início" />
+            <TextArea fx:id="info_tarefa" layoutX="8.0" layoutY="188.0" prefHeight="260.0" prefWidth="358.0" promptText="Adicionar Descrição a Tarefa">
+                <font>
+                    <Font size="16.0" />
+                </font>
+            </TextArea>
+            <DatePicker id="data_fim" fx:id="data_fimTarefa" layoutX="290.0" layoutY="522.0" prefHeight="58.0" prefWidth="180.0" promptText="Data Termino" />
+            <ImageView fitHeight="27.0" fitWidth="30.0" layoutX="228.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../../Imgs/caminho_data.gif" />
+                </image>
+            </ImageView>
+        </Pane>
+        <Pane id="painel_dados_user" layoutX="588.0" layoutY="22.0" prefHeight="380.0" prefWidth="358.0">
+            <Text layoutX="128.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Atribuir Usuários">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Text>
+            <ComboBox id="cb_user" fx:id="atribuir_user" layoutX="14.0" layoutY="106.0" prefHeight="37.0" prefWidth="169.0" promptText="Usuários Responsáveis" />
+            <TextArea fx:id="info_avisoUser" layoutX="14.0" layoutY="156.0" prefHeight="181.0" prefWidth="321.0" promptText="Adicionar Aviso " />
+        </Pane>
+        <Button id="add_tarefa" fx:id="Adicionar_tarefa" layoutX="618.0" layoutY="569.0" mnemonicParsing="false" onAction="#Btn_adicionar_tarefa" prefHeight="58.0" prefWidth="301.0" text="           Adicionar Tarefa" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="52.0" fitWidth="59.0" layoutX="648.0" layoutY="572.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../Imgs/icon_adicionar.png" />
+            </image>
+        </ImageView>
+        <Pane id="painel_dados_prioriade" layoutX="580.0" layoutY="427.0" prefHeight="124.0" prefWidth="373.0">
+            <Text layoutX="96.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecione Prioridade">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Text>
+            <RadioButton id="rdb_1" fx:id="corVerde" layoutX="36.0" layoutY="62.0" mnemonicParsing="false" text="Verde" textFill="#42f554">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            <toggleGroup>
+               <ToggleGroup fx:id="grupoCores" />
+            </toggleGroup>
+            </RadioButton>
+            <RadioButton id="rdb_2" fx:id="corAmarela" layoutX="147.0" layoutY="62.0" mnemonicParsing="false" text="Amarelo" textFill="#d7e822">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </RadioButton>
+            <RadioButton id="rdb_3" fx:id="corVermelha" layoutX="262.0" layoutY="62.0" mnemonicParsing="false" text="Vermelho" textFill="#ff3636">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </RadioButton>
+        </Pane>
+    </Pane>
+    <Button id="Btn_voltarPagina" fx:id="btn_voltar" layoutX="34.0" layoutY="37.0" mnemonicParsing="false" onAction="#BtnVoltarPaginaTarefa" prefHeight="44.0" prefWidth="132.0" text="       Voltar" textFill="WHITE">
+        <font>
+          <Font size="16.0" />
+        </font>
+    </Button>
+    <ImageView fitHeight="37.0" fitWidth="38.0" layoutX="43.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+          <Image url="@../../Imgs/voltar.png" />
+        </image>
+    </ImageView>
+   <Text fill="#836262" layoutX="294.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Todas as Informacoes Ficarão Gravadas no Banco de Dados" wrappingWidth="528.419921875">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Text>
+   <ImageView fitHeight="52.0" fitWidth="61.0" layoutX="836.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../Imgs/icon_database.gif" />
+      </image>
+   </ImageView>
+</AnchorPane>

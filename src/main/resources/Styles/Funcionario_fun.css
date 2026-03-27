@@ -1,0 +1,37 @@
+#painel_fundo {
+    -fx-background-color: #EEEEEE;
+}
+
+#menu {
+    -fx-background-color: #0E1950;
+}
+
+#btn_agenda,
+#btn_Anotacao,
+#config_btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-border-color: transparent;
+    -fx-border-radius: 8px;
+    -fx-padding: 8px 12px;
+    -fx-transition: 0.3s;
+}
+
+
+#btn_agenda:hover,
+#btn_Anotacao:hover,
+#config_btn:hover {
+    -fx-background-color: #19326e;
+}
+
+
+#btn_agenda:pressed,
+#btn_Anotacao:pressed,
+#config_btn:pressed {
+    -fx-background-color: #74c0fc;
+}
+
+.active {
+    -fx-background-color: #74c0fc !important;
+}

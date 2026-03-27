@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="painel_fundo" prefHeight="800.0" prefWidth="1023.0" stylesheets="@../../Styles/Config.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jdm.agenda.Controllers.Admin.SuporteController">
+
+    <Button id="btnSair" fx:id="botao_sair" layoutX="948.0" layoutY="28.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="61.0" text="Sair" />
+    <Text layoutX="104.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail Para Suporte">
+        <font>
+          <Font size="20.0" />
+        </font>
+    </Text>
+    <Text layoutX="139.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guilherme_Bussadori1@gmail.com">
+        <font>
+          <Font size="15.0" />
+        </font>
+    </Text>
+    <Text layoutX="139.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ViniciusSaccani123@gmail.com">
+        <font>
+          <Font size="15.0" />
+        </font>
+    </Text>
+    <Text layoutX="139.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mu_Araujo122@gmail.com">
+        <font>
+          <Font size="15.0" />
+        </font>
+    </Text>
+    <Text layoutX="139.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nunes_Caiky123@gmail.com">
+        <font>
+          <Font size="15.0" />
+        </font>
+    </Text>
+    <Circle fill="DODGERBLUE" layoutX="115.0" layoutY="101.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+    <Circle fill="DODGERBLUE" layoutX="115.0" layoutY="139.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+    <Circle fill="DODGERBLUE" layoutX="115.0" layoutY="174.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+    <Circle fill="DODGERBLUE" layoutX="115.0" layoutY="208.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+    <Text layoutX="107.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caso necessidade clique no link abaixo">
+        <font>
+          <Font size="20.0" />
+        </font>
+    </Text>
+    <Hyperlink fx:id="hyperlink" layoutX="151.0" layoutY="379.0" onAction="#HyperLinlkSuporte" text="Clique Aqui Para Suporte 24h" textFill="#002fff">
+        <font>
+          <Font size="15.0" />
+        </font>
+    </Hyperlink>
+    <Circle fill="#00ffaa" layoutX="124.0" layoutY="393.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+</AnchorPane>

@@ -1,0 +1,115 @@
+#painel_fundo {
+    -fx-background-color: #EEEEEE;
+}
+
+#painel_fundo {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-color: rgba(0,0,0,0.1);
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 6, 0.2, 2, 2);
+    -fx-padding: 15;
+}
+
+#painel_fundo:hover {
+    -fx-background-color: #F8FAFF;
+    -fx-effect: dropshadow(gaussian, rgba(101,217,80,0.3), 10, 0.3, 0, 0);
+    -fx-cursor: hand;
+}
+
+#btn_voltar {
+    -fx-background-color: #74c0fc;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.1), 2, 0.0 , 0 , 1 );
+}
+
+#btn_voltar:hover {
+    -fx-background-color: #45A049;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2), 4, 0.0 , 0 , 2 );
+}
+
+
+#btn_voltar:pressed {
+    -fx-background-color: #3E8E41;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.1), 2, 0.0 , 0 , 1 );
+}
+
+#btn_salvarLogin {
+    -fx-background-color: #4C6EF5;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.08), 2, 0.0 , 0 , 1 );
+}
+
+
+#btn_salvarLogin:hover {
+    -fx-background-color: #4D61B1;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.15), 4, 0.0 , 0 , 2 );
+}
+
+
+#btn_salvarLogin:pressed {
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.05), 2, 0.0 , 0 , 1 );
+}
+
+
+#btn_salvar {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.1), 2, 0.0 , 0 , 1 );
+}
+
+
+#btn_salvar:hover {
+    -fx-background-color: #45A049;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2), 4, 0.0 , 0 , 2 );
+}
+
+
+#btn_salvar:pressed {
+    -fx-background-color: #3E8E41;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.1), 2, 0.0 , 0 , 1 );
+}
+
+
+#btn_ativarFuncionario {
+    -fx-background-color: #ff8830;
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.08), 2, 0.0 , 0 , 1 );
+}
+
+
+#btn_ativarFuncionario:hover {
+    -fx-background-color: #4D61B1;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.15), 4, 0.0 , 0 , 2 );
+}
+
+
+#btn_ativarFuncionario:pressed {
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.05), 2, 0.0 , 0 , 1 );
+}
+
+

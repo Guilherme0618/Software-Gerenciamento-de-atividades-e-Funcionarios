@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="painel_fundo" prefHeight="800.0" prefWidth="1200.0" stylesheets="@../../Styles/Admin_fun.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jdm.agenda.Controllers.Admin.AdminFuncionalidadesController">
+   <AnchorPane fx:id="conteudoPane" layoutX="187.0" prefHeight="800.0" prefWidth="1023.0">
+       <fx:include source="Admin.fxml" />
+         </AnchorPane>
+    <Pane id="menu" prefHeight="800.0" prefWidth="187.0">
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="8.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../Imgs/icon_user.png" />
+            </image>
+        </ImageView>
+        <Text fx:id="nome_user" fill="WHITE" layoutX="54.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pedro Alberto">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Button id="btn_grafico" fx:id="botao_grafico" layoutY="301.0" mnemonicParsing="false" onAction="#mudarPagina_grafico" prefHeight="39.0" prefWidth="187.0" text="    Gráfico Geral" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button id="btn_agenda" fx:id="botao_agenda" layoutY="360.0" mnemonicParsing="false" onAction="#mudarPagina_agenda" prefHeight="39.0" prefWidth="187.0" text="Agenda" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button id="btn_funcionario" fx:id="botao_funcionarios" layoutY="415.0" mnemonicParsing="false" onAction="#mudarPagina_funcionario" prefHeight="39.0" prefWidth="187.0" text="  Funcionários">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Button id="config_btn" fx:id="botao_config" layoutY="752.0" mnemonicParsing="false" onAction="#mudarPagina_configuracoes" prefHeight="39.0" prefWidth="187.0" text="   Suporte">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="13.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../Imgs/icon_graf.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="13.0" layoutY="367.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../Imgs/icon_agenda.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="13.0" layoutY="419.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../Imgs/icon_funcionario.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="13.0" layoutY="755.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../Imgs/icon_suport.png" />
+            </image>
+        </ImageView>
+    </Pane>
+</AnchorPane>

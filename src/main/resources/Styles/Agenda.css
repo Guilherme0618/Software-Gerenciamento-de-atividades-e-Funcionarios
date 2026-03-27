@@ -1,0 +1,174 @@
+painel_fundo {
+    -fx-background-color: #EEEEEE;
+}
+
+#pesquisa_tarefa {
+    -fx-background-color: #EEEEEE;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-radius: 20;
+    -fx-border-color: #aaa;
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+    -fx-padding: 5 5 3 5;
+    -fx-prompt-text-fill: #aaa;
+}
+
+#pesquisa_tarefa:focused {
+    -fx-border-color: #4CAF50;
+    -fx-border-width: 0 0 2 0;
+}
+
+#select_data {
+    -fx-background-color: #f7f7f7;
+    -fx-background-radius: 10;
+    -fx-border-color: #d0d0d0;
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+    -fx-padding: 6 10;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+#select_data:focused {
+    -fx-border-color: #4A90E2;
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(74,144,226,0.3), 8, 0, 0, 2);
+}
+
+#select_data .arrow-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0 6;
+}
+
+#select_data .arrow-button:hover {
+    -fx-background-color: rgba(74,144,226,0.1);
+}
+
+#select_data .text-field {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+
+#btn_adicionarTarefa {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.1), 2, 0.0 , 0 , 1 );
+}
+
+
+#btn_adicionarTarefa:hover {
+    -fx-background-color: #45A049;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2), 4, 0.0 , 0 , 2 );
+}
+
+
+#btn_adicionarTarefa:pressed {
+    -fx-background-color: #3E8E41;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.1), 2, 0.0 , 0 , 1 );
+}
+
+
+
+
+#btn_sair {
+    -fx-background-color: #E57373;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.08), 2, 0.0 , 0 , 1 );
+}
+
+
+#btn_sair:hover {
+    -fx-background-color: #D32F2F;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.15), 4, 0.0 , 0 , 2 );
+}
+
+
+#btn_sair:pressed {
+    -fx-background-color: #B71C1C;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.05), 2, 0.0 , 0 , 1 );
+}
+
+
+
+#painel_atividades {
+    -fx-background-color: #E9ECF3;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-color: rgba(0,0,0,0.05);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0, 3, 3);
+    -fx-padding: 15;
+}
+
+
+#painel_atividades > .viewport {
+    -fx-background-color: transparent;
+}
+
+
+#painel_atividades .scroll-bar:vertical,
+#painel_atividades .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-pref-width: 10px;
+    -fx-pref-height: 10px;
+}
+
+#painel_atividades .scroll-bar .track {
+    -fx-background-color: rgba(0, 0, 0, 0.05);
+    -fx-background-radius: 5px;
+}
+
+#painel_atividades .scroll-bar .thumb {
+    -fx-background-color: linear-gradient(to bottom, #4C6EF5, #0E1950);
+    -fx-background-radius: 6px;
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}
+
+#painel_atividades .scroll-bar .thumb:hover {
+    -fx-background-color: linear-gradient(to bottom, #65D950, #4C6EF5);
+    -fx-opacity: 1.0;
+}
+
+#painel_atividades .scroll-bar .increment-button,
+#painel_atividades .scroll-bar .decrement-button {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-shape: "";
+}
+
+#btn_excluirTarefa {
+    -fx-background-color: #E57373;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.08), 2, 0.0 , 0 , 1 );
+}
+
+
+#btn_excluirTarefa:hover {
+    -fx-background-color: #D32F2F;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.15), 4, 0.0 , 0 , 2 );
+}
+
+
+#btn_excluirTarefa:pressed {
+    -fx-background-color: #B71C1C;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.05), 2, 0.0 , 0 , 1 );
+}

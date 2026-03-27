@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1023.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jdm.agenda.Controllers.Admin.AdminController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1023.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.74" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../Imgs/plano_fundo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

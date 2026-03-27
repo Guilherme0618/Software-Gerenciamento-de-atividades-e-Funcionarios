@@ -1,0 +1,86 @@
+#painel_fundo {
+    -fx-background-color: #EEEEEE;
+}
+
+#barraPesquisaFuncionalidade {
+    -fx-background-color: #EEEEEE;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-radius: 20;
+    -fx-border-color: #aaa;
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+    -fx-padding: 5 5 3 5;
+    -fx-prompt-text-fill: #aaa;
+}
+
+#barraPesquisaFuncionalidade:focused {
+    -fx-border-color: #4CAF50;
+    -fx-border-width: 0 0 2 0;
+}
+
+#pane_graficoTarefas {
+    -fx-background-color: #D9D9D9;
+    -fx-background-radius: 20px;
+    -fx-background-insets: 0;
+    -fx-border-color: #EEEEEE;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.05), 4, 0.0 , 0 , 2 );
+}
+
+#pane_graficoTarefas .viewport {
+    -fx-background-color: #D9D9D9;
+}
+
+#grafico_tarefa {
+    -fx-background-color: #EEEEEE;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-radius: 20;
+    -fx-border-color: #aaa;
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+    -fx-padding: 5 5 3 5;
+    -fx-prompt-text-fill: #aaa;
+}
+
+#pane_grafico2 {
+    -fx-background-color: #D9D9D9;
+    -fx-background-radius: 20px;
+    -fx-background-insets: 0;
+    -fx-border-color: #EEEEEE;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.05), 4, 0.0 , 0 , 2 );
+}
+
+#pane_grafico2 .viweport{
+    -fx-background-color: #D9D9D9;
+}
+
+.default-color0.chart-pie { -fx-pie-color: #e74c3c; } /* Alta */
+.default-color1.chart-pie { -fx-pie-color: #f1c40f; } /* Média */
+.default-color2.chart-pie { -fx-pie-color: #2ecc71; } /* Baixa */
+
+
+#btnSair {
+    -fx-background-color: #E57373;
+    -fx-text-color: white;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px 16px;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.08), 2, 0.0 , 0 , 1 );
+}
+
+
+#btnSair:hover {
+    -fx-background-color: #D32F2F;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.15), 4, 0.0 , 0 , 2 );
+}
+
+
+#btnSair:pressed {
+    -fx-background-color: #B71C1C;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.05), 2, 0.0 , 0 , 1 );
+}
